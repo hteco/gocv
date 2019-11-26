@@ -23,7 +23,7 @@ import (
 	"image/color"
 	"os"
 
-	"gocv.io/x/gocv"
+	"github.com/hteco/gocv"
 )
 
 func min(a, b float32) float32 {

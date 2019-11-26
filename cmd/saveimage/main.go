@@ -17,7 +17,7 @@ import (
 	"fmt"
 	"os"
 
-	"gocv.io/x/gocv"
+	"github.com/hteco/gocv"
 )
 
 func main() {

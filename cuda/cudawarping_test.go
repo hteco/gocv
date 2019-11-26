@@ -6,7 +6,7 @@ import (
 	"math"
 	"testing"
 
-	"gocv.io/x/gocv"
+	"github.com/hteco/gocv"
 )
 
 func TestResize(t *testing.T) {
