@@ -35,7 +35,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/hteco/gocv"
+	"gocv.io/x/gocv"
 )
 
 func main() {

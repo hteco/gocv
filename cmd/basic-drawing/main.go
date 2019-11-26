@@ -15,7 +15,7 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/hteco/gocv"
+	"gocv.io/x/gocv"
 )
 
 var w = 400

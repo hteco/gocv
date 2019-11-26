@@ -7,7 +7,7 @@ import "C"
 import (
 	"image"
 
-	"github.com/hteco/gocv"
+	"gocv.io/x/gocv"
 )
 
 // Tracker is the base interface for object tracking.

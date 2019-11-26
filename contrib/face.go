@@ -8,7 +8,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/hteco/gocv"
+	"gocv.io/x/gocv"
 )
 
 // PredictResponse represents a predicted label and associated confidence.

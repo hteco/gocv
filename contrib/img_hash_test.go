@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/hteco/gocv"
+	"gocv.io/x/gocv"
 )
 
 const (

@@ -1,3 +1,3 @@
-module github.com/hteco/gocv
+module gocv.io/x/gocv
 
 go 1.13

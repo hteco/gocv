@@ -3,7 +3,7 @@
 // For further details, please see:
 // https://github.com/opencv/c
 //
-// import "github.com/hteco/gocv/cuda"
+// import "gocv.io/x/gocv/cuda"
 package cuda
 
 /*
@@ -11,7 +11,7 @@ package cuda
 #include "cuda.h"
 */
 import "C"
-import "github.com/hteco/gocv"
+import "gocv.io/x/gocv"
 
 // GpuMat is the GPU version of a Mat
 //

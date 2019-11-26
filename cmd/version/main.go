@@ -13,7 +13,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/hteco/gocv"
+	"gocv.io/x/gocv"
 )
 
 func main() {
