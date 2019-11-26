@@ -274,6 +274,20 @@ func ReadNetFromTensorflowBytes(model []byte) (Net, error) {
 	return Net{p: unsafe.Pointer(C.Net_ReadNetFromTensorflowBytes(*bModel))}, nil
 }
 
+// ReadNetFromDarknet reads a network model stored in darknet framework's format.
+//
+// For further details, please see:
+// https://docs.opencv.org/master/d6/d0f/group__dnn.html#gacdba30a7c20db2788efbf5bb16a7884d
+//
+func ReadNetFromDarknet(config string, model string) Net {
+	cModel := C.CString(model)
+	defer C.free(unsafe.Pointer(cModel))
+
+	cConfig := C.CString(config)
+	defer C.free(unsafe.Pointer(cConfig))
+	return Net{p: unsafe.Pointer(C.Net_ReadNetFromDarknet(cConfig, cModel))}
+}
+
 // BlobFromImage creates 4-dimensional blob from image. Optionally resizes and crops
 // image from center, subtract mean values, scales values by scalefactor,
 // swap Blue and Red channels.
